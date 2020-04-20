@@ -83,10 +83,10 @@ body{
 }
 #welcome_text_div{
 	position: absolute;
-	width: 800px;
+	width: 60%;
 	height: 300px;
-	top: 26%;
-	left: 24%;
+	top: 22%;
+	left: 18%;
 }
 #welcome_text{
 	background: linear-gradient(to right,#330867 0%,#30CFD0 100%);
@@ -96,7 +96,6 @@ body{
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 57px;
-	margin-top: 50px;
 	text-align: center;
 }
 #welcome_text_sub{
@@ -104,12 +103,9 @@ body{
 	font-family: sans-serif;
 	font-weight: bold;
 	font-size: 37px;
-	margin-top: -30px;
 	text-align: center;
 }
 #welcome_link{	
-	position: absolute;
-	float: center;
 	text-decoration: none;
 	font-family: sans-serif;
 	color: white;
@@ -117,8 +113,8 @@ body{
 	background-color: rgba(250,250,250,0.6);
 	padding: 10px 30px 10px 30px;
 	margin-left:330px;
-	margin-top: 10px; 
 	border-radius: 5px;
+	margin-left: 38%;
 }
 #welcome_link:hover{
 	background-color: rgba(0,0,0,0.6);
@@ -128,13 +124,13 @@ body{
 	width: 60%;
 	height: 50px;
 	background-color:#DCDCDC;
-	bottom: 20px;
-	left:320px;
+	bottom: 10%;
 	border-radius: 5px;
+	margin-left: 21%;
 }
 #where_div{
 	position: absolute;
-	width: 40%;
+	width: 35%;
 	height: 50px;
 	border-right: 0.5px solid grey;
 }
@@ -143,27 +139,27 @@ body{
 	width: 15%;
 	height: 50px;
 	border-right: 0.5px solid grey;
-	left:40%;
+	left:35%;
 }
 #check_out_div{
 	position: absolute;
-	width: 15%;
+	width: 16%;
 	height: 50px;
 	border-right: 0.5px solid grey;
-	left:55%;
+	left:50%;
 }
 #guest_div{
 	position: absolute;
-	width: 15%;
+	width: 18%;
 	height: 50px;
 	border-right: 0.5px solid grey;
-	left:70%;
+	left:66%;
 }
 #search_div{
 	position: absolute;
-	width: 15%;
+	width: 16%;
 	height: 50px;
-	left:85%;
+	left:84%;
 	background-color:#cc0000;
 }
 #search_div:hover{
@@ -258,7 +254,7 @@ body{
 
 #lower_mid{
 	background-color:black;
-	height:900px;
+	height:1000px;
 	width:100%; 
 }
 #lower_part1{
@@ -299,7 +295,7 @@ body{
 	width:47%;
 	background-color: #404040;
 	border-radius: 15px;
-	margin-top: 1%;
+	margin-top: 1.5%;
 }
 #lower_mid_heading{
 	float: left;
@@ -388,11 +384,21 @@ body{
 #footer_length{
 	width: 95%;
 }
+#footer_text_div{
+	width: 70%;
+	height: 100%;
+	float:left;
+}
 #footer_text{
 	font-family: sans-serif;
 	float: left;
     display: inline;
     margin-left: 4%
+}
+#footer_img_div{
+	width: 30%;
+	display: inline;
+	height: 100%;
 }
 #world1{
 	height: 20px;
