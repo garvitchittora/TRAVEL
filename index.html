@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="shortcut icon" href="logo2.png" type="image/png" />
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmqmbPxHorvUxdXkVpAumH6XQq9WuBW1M&libraries=places"></script>
 </head>
 <body>
 	<div id="header">
@@ -25,21 +26,20 @@
 			<a href="index.html" id="welcome_link">How it works</a>
 		</div>
 		<div id="searchbar">
-			<div id="where_div">
-				<p id ="searchbar_text">Where you want to go ? </p>
-			</div>
-			<div id="check_div">
-				<p id ="searchbar_text">Check In </p>
-			</div>
-			<div id="check_out_div">
-				<p id ="searchbar_text">Check Out </p>
-			</div>
-			<div id="guest_div">
-				<p id ="searchbar_text">Guest No ▼ </p>
-			</div>
-			<div id="search_div">
-				<a href="index.html" id="search_text">Search</a>
-			</div>
+
+			<input id="where_div" class ="searchbar_text" placeholder="   		Where you want to go ?">
+			
+			<input id="check_div" class ="searchbar_text" placeholder="     Check In Date ">
+			
+			<input id="check_out_div" class ="searchbar_text" placeholder="    	Check Out Date">
+			
+			<input class="searchbar_text" id ="guest_div" placeholder="   	Guest No   ▼">
+		   	<a href="index.html">
+			   	<div id="search_div">
+					<p id="search_text">Search</p>
+			    </div>
+			</a>
+				
 		</div>
 	</div>
 	<div id="mid">
@@ -48,7 +48,7 @@
 		</div>
 		<div id="part1">
 			<a href="index.html" class="link1">
-				<img src="bg.jfif" id="part_image"/>
+				<img src="bg.jpeg" id="part_image"/>
 				<p class="mid_text">Online Experiences</p>
 				<p class="mid_para">Now you can meet people all over the world while trying something new.</p>
 			</a>
