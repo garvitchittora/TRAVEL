@@ -173,11 +173,7 @@ body{
 #search_div:hover{
 	background-color: #DC143C;
 }
-#searchbar_text{
-	font-family: sans-serif;
-	color: grey;
-	margin-left: 15px;
-}
+
 #search_text{
 	font-family: sans-serif;
 	color: white;
