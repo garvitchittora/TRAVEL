@@ -89,7 +89,7 @@ body{
 	left: 18%;
 }
 #welcome_text{
-	background: linear-gradient(to right,#330867 0%,#30CFD0 100%);
+	background: linear-gradient(to right,#d6249f 0%,#fd5949 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-family: sans-serif;
