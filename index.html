@@ -11,14 +11,37 @@
 			font-size: 90%;
 			padding-left: 5%; 
 		}
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />	
 	</style>
 </head>
 <body>
+			
+	<div class='overlay'>
+	    <div class='preloader'>
+	      	<div class='diamond'>
+	       	<span></span>
+	       	<span></span>
+	       	<span></span>
+	      	</div>
+	      	<div class='movement'>
+	       	<span></span>
+	       	<span></span>
+	       	<span></span>
+	     	</div>
+	    </div>
+	    <h1 style="color: red">
+	    	LOADING....
+	    </h1>
+	</div>
+
 	<div id="header">
 		<div id="nav">
 			<a href="index.html" class="link1">
-				<img src="logo2.png" id="logo"/>
-				<p id="logo_text">RAVEL</p>
+				<img src="logo1.png" id="logo"/>
+				<!-- <p id="logo_text">RAVEL</p> -->
 			</a>
 			
 			<a href="index.html" id="nav_link1">Help</a>
@@ -28,7 +51,7 @@
 		</div>
 		<div id="welcome_text_div">
 			<p id="welcome_text">Welcome Home</p>
-			<p id="welcome_text_sub">We Rent unique places For You</p>
+			<p id="welcome_text_sub">We Sale and Rent unique places For You</p>
 			<a href="index.html" id="welcome_link">How it works</a>
 		</div>
 		<div id="searchbar">
@@ -37,8 +60,11 @@
 			
 			<input id="check_div" placeholder="Check In Date ">
 			
+			<!-- <input class="js-range-datepicker font-size-16 shadow-none font-weight-medium form-control hero-form bg-transparent border-0 flatpickr-input active" type="text" data-rp-wrapper="#datepickerWrapperFromOne" data-rp-type="range" data-rp-date-format="M d / Y" data-rp-default-date="["Jul 7 / 2020", "Aug 25 / 2020"]" readonly="readonly" style="width: 217.5px;"> -->
 			<input id="check_out_div" placeholder="Check Out Date">
-			
+			<!-- $('input[name="dates"]').daterangepicker(); -->
+			<!-- <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" /> -->
+
 			<input class="searchbar_text" id ="guest_div" placeholder="  Guest No  ▼">
 		   	<a href="index.html">
 			   	<div id="search_div">
@@ -80,7 +106,7 @@
 		<p id="lower_mid_sub">Now you can meet people all over the world while trying <br>something new. Join live, interactive video sessions led by <br>expert hosts—all without leaving home.</p>
 		<div id="lower_part1">
 			<a href="index.html">
-				<img src="lower0.jpg" id="part_image"/>
+				<img src="check10.jpg" id="part_image"/>
 				<p id="lower_part">
 					Experience Luxurious Places With Us ...<br><br>Travel The World With Us ...
 				</p>
@@ -170,5 +196,20 @@
 		</div>
 		
 	</div>
+	<script type="text/javascript">
+		window.addEventListener("load",function(){
+			const loader=document.querySelector(".overlay");
+			loader.className+=" hidden";
+		});
+		$('input[name="dates"]').daterangepicker();
+
+		$(function() {
+		  	$('input[name="daterange"]').daterangepicker({
+		    opens: 'left'
+		  }, function(start, end, label) {
+		    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+		  });
+		});
+	</script>
 </body>
 </html>
