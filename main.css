@@ -436,35 +436,20 @@ body{
 	border-top-left-radius: 8px;
 	border-bottom-left-radius: 8px;
 }
-#check_div{
-	position: absolute;
-	width: 15%;
-	height: 45px;
-	background-color:#DCDCDC;
-	border-right: 0.5px solid grey;
-	left:35%;
-}
-#check_out_div{
-	position: absolute;
-	width: 16%;
-	height: 45px;
-	background-color:#DCDCDC;
-	border-right: 0.5px solid grey;
-	left:50%;
-}
+
 #guest_div{
 	position: absolute;
-	width: 18%;
+	width: 21%;
 	height: 45px;
 	background-color:#DCDCDC;
 	border-right: 0.5px solid grey;
-	left:66%;
+	left:65%;
 }
 #search_div{
 	position: absolute;
-	width: 16%;
+	width: 14%;
 	height: 50px;
-	left:84%;
+	left:78%;
 	background:linear-gradient(to right,#ff9933 0%,#800040 100%);
 	border-top-right-radius: 8px;
 	border-bottom-right-radius: 8px;

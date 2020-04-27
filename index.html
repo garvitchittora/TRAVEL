@@ -11,11 +11,11 @@
 			font-size: 90%;
 			padding-left: 5%; 
 		}
+	</style>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />	
-	</style>
 </head>
 <body>
 			
@@ -58,13 +58,18 @@
 
 			<input id="where_div" placeholder="   	Where you want to go ?">
 			
-			<input id="check_div" placeholder="Check In Date ">
-			
-			<!-- <input class="js-range-datepicker font-size-16 shadow-none font-weight-medium form-control hero-form bg-transparent border-0 flatpickr-input active" type="text" data-rp-wrapper="#datepickerWrapperFromOne" data-rp-type="range" data-rp-date-format="M d / Y" data-rp-default-date="["Jul 7 / 2020", "Aug 25 / 2020"]" readonly="readonly" style="width: 217.5px;"> -->
-			<input id="check_out_div" placeholder="Check Out Date">
-			<!-- $('input[name="dates"]').daterangepicker(); -->
-			<!-- <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" /> -->
-
+			 <!-- <p>
+			 	im a super hero
+			 </p> -->
+			<!-- <input id="check_div" placeholder="Check In Date ">
+		
+			<input id="check_out_div" placeholder="Check Out Date"> -->
+			<div>
+			<div style="position: absolute;width: 30%;height: 20px;background-color:#DCDCDC;border-right:0.5px solid grey;border-left:2px solid grey;border-top:2px solid grey;left:35%;" >	
+			<label for="daterange" style="margin-left: 10%; ">Check In - Check Out Date</label>
+			</div>
+			<input type="text" name="daterange" style="position: absolute;width: 30%;height: 28px;background-color:#DCDCDC;border-right:0.5px solid grey;left:35%; margin-top: 20px;border-bottom:2px solid grey;border-left:2px solid grey;border-top: 0.5px white" />	
+			</div>
 			<input class="searchbar_text" id ="guest_div" placeholder="  Guest No  ▼">
 		   	<a href="index.html">
 			   	<div id="search_div">
